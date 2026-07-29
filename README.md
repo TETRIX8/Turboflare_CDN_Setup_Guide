@@ -72,7 +72,7 @@ nano /etc/ssh/sshd_config
 
 Ищем там строчку "# Port 22" и меняем её на любой порт:
 
-[Порт](/image/Изменить%20порт.PNG)
+![Порт](/image/Изменить%20порт.PNG)
 
 Выполняем перезагрузку ssh:
 
@@ -120,25 +120,25 @@ ssh root@ваш id -p ваш порт
 
 Для начала вам нужно зарегистрироваться в turboflare. Делается всё это очень легко вам потребуется только почта и номер телефон
 
-[turboflare-регистрация](/image/turboflare-регистрация.PNG)
+![turboflare-регистрация](/image/turboflare-регистрация.PNG)
 
 Почту и телефон нужно подтвердить
 
-[turboflare-регистрация(1)](/image/turboflare-регистрация(1).PNG)
+![turboflare-регистрация(1)](/image/turboflare-регистрация(1).PNG)
 
 Дальше задаём пароль
 
-[turboflare-регистрация(2)](/image/turboflare-регистрация(2).PNG)
+![turboflare-регистрация(2)](/image/turboflare-регистрация(2).PNG)
 
 И подтверждаем телефон
 
-[turboflare-регистрация(3)](/image/turboflare-регистрация(3).PNG)
+![turboflare-регистрация(3)](/image/turboflare-регистрация(3).PNG)
 
 #### Подключение cdn
 
 После регистрации нас встречает следующий интерфейс
 
-[turboflare-подключение_cdn](/image/turboflare-подключение_cdn.PNG)
+![turboflare-подключение_cdn](/image/turboflare-подключение_cdn.PNG)
 
 (у вас там ничего не будет)
 
@@ -148,11 +148,11 @@ ssh root@ваш id -p ваш порт
 
 Дальше нужно будет написать ваш домен и ip адрес сервера с портом :443
 
-[turboflare-подключение_cdn(1)](/image/turboflare-подключение_cdn(1).PNG)
+![turboflare-подключение_cdn(1)](/image/turboflare-подключение_cdn(1).PNG)
 
 Дальше вы идёте к своему регистратору домена и меняете ns записи на те что указаны в turboflare
 
-[](/image/turboflare-подключение_cdn(2).PNG)
+![turboflare-подключение_cdn(2)](/image/turboflare-подключение_cdn(2).PNG)
 
 После этого можно спокойно идти гулять на 24 часа, хоть и пишут они от 15 минут, у меня оба домена делегировались 23-24 часа.
 
@@ -162,13 +162,13 @@ ssh root@ваш id -p ваш порт
 
 Если вы хотите вы можете проверить точно ли вам дали ip в бс, для этого нажмите в панеле turboflare на свой домен, дальше перейдите в настройки dns-зоны и пролистав ниже вы увидете свой домен и привязанный к нему ip. Дальше идёте в тг бота @Latency_Lab_bot и проверяете.
 
-[turboflare-проверка_cdn](/image/turboflare-проверка_cdn.PNG)
+![turboflare-проверка_cdn](/image/turboflare-проверка_cdn.PNG)
 
 #### Настройки cdn
 
 Из настроек в turboflare нету почти ничего, по этому тут и нечего говорить, просто сделайте вот так:
 
-[turboflare-настройки_cdn](/image/turboflare-настройки_cdn.PNG)
+![turboflare-настройки_cdn](/image/turboflare-настройки_cdn.PNG)
 
 (Обязательно укажите порт 443)
 
@@ -462,21 +462,22 @@ sudo nano /etc/caddy/Caddyfile
 
 Проверяем, заходим на свой домен там должен быть filestash:
 
-[filestash](/image/filestash.PNG)
+![filestash](/image/filestash.PNG)
 
 Задайте пароль от админки.
 
 Дальше вам нужно будет выбрать способ использования filestash:
 
-[filestash(1)](/image/filestash(1).PNG)
+![filestash(1)](/image/filestash(1).PNG)
 
 Я выберу 2, так как буду просто хранить файлы и раздавать доступ друзьям, вы можете использовать 1 если доступ никаму не будете раздавать
 
 Дальше сразу идёте в настройки и меняете параметр хост убрав https:// перед своим доменом:
 
-[filestash(2)](/image/filestash(2).PNG)
+![filestash(2)](/image/filestash(2).PNG)
 
 -->
 
-[filestash(3)](/image/filestash(3).PNG)
+![filestash(3)](/image/filestash(3).PNG)
 
+Всё! Возвращайтесь к клиентскому конфигу или ссылке и проверяйте в впн клиенте. На момент 29.07.2026 работает только в впн клиентах throne и incy
