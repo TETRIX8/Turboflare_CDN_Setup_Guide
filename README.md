@@ -456,6 +456,10 @@ sudo nano /etc/caddy/Caddyfile
     tls /etc/letsencrypt/live/ваш_домен/fullchain.pem /etc/letsencrypt/live/ваш_домен/privkey.pem
     header Strict-Transport-Security "max-age=15552000; includeSubDomains"
 
+    reverse_proxy /static/getFile/video/segment.ts* 127.0.0.1:8081 {
+        header_down Cache-Control "no-store, no-cache, must-revalidate"
+    }
+
     reverse_proxy 127.0.0.1:8334
 }
 ```
